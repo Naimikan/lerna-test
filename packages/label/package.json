@@ -1,5 +1,5 @@
 {
-  "name": "@lerna-test/label",
+  "name": "@naimikan-development/label",
   "version": "1.0.4",
   "description": "> TODO: description",
   "author": "Guillem Aldeguer Lima <guillem.aldeguer@gmail.com>",
@@ -40,5 +40,5 @@
       "../../setupTests"
     ]
   },
-  "gitHead": "8941890fe1150bc4516d5d5e73333ad04a18aef9"
+  "gitHead": "2832635bae236c19da68e69aed852562dbddeb0c"
 }
