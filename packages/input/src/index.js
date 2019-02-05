@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import Label from '@lerna-test/label';
 
 const Input = ({
-  className,
+  className = '',
   type,
 }) => (
   <Fragment>
