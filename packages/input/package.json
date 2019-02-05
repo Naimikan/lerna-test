@@ -1,0 +1,44 @@
+{
+  "name": "@lerna-test/input",
+  "version": "1.0.0",
+  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
+  "keywords": [],
+  "author": "Guillem Aldeguer Lima <guillem.aldeguer@gmail.com>",
+  "homepage": "https://github.com/Naimikan/lerna-test/tree/master/packages/input#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naimikan/lerna-test.git"
+  },
+  "scripts": {
+    "transpile": "babel src -d dist --ignore '**/*.spec.js,**/*.stories.js'",
+    "jest": "jest --coverage --verbose --color",
+    "build": "npm run jest && npm run transpile"
+  },
+  "bugs": {
+    "url": "https://github.com/Naimikan/lerna-test/issues"
+  },
+  "dependencies": {
+    "@lerna-test/label": "^1.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "transform-es2015-modules-commonjs"
+        ]
+      }
+    }
+  },
+  "jest": {
+    "setupFiles": [
+      "../../setupTests"
+    ]
+  }
+}

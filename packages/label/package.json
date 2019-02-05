@@ -1,0 +1,40 @@
+{
+  "name": "@lerna-test/label",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Guillem Aldeguer Lima <guillem.aldeguer@gmail.com>",
+  "homepage": "https://github.com/Naimikan/lerna-test/tree/master/packages/label#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naimikan/lerna-test.git"
+  },
+  "scripts": {
+    "transpile": "babel src -d dist --ignore '**/*.spec.js,**/*.stories.js'",
+    "jest": "jest --coverage --verbose --color",
+    "build": "npm run jest && npm run transpile"
+  },
+  "bugs": {
+    "url": "https://github.com/Naimikan/lerna-test/issues"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "transform-es2015-modules-commonjs"
+        ]
+      }
+    }
+  },
+  "jest": {
+    "setupFiles": [
+      "../../setupTests"
+    ]
+  }
+}
