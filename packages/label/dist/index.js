@@ -10,10 +10,12 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Label = function Label(_ref) {
-  var className = _ref.className,
+  var _ref$className = _ref.className,
+      className = _ref$className === void 0 ? '' : _ref$className,
       _ref$onClick = _ref.onClick,
       onClick = _ref$onClick === void 0 ? function () {} : _ref$onClick,
-      children = _ref.children;
+      _ref$children = _ref.children,
+      children = _ref$children === void 0 ? null : _ref$children;
   return _react.default.createElement("label", {
     className: "gz-label ".concat(className),
     onClick: onClick

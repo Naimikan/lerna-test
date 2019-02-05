@@ -12,6 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/Naimikan/lerna-test.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "transpile": "babel src -d dist --ignore '**/*.spec.js,**/*.stories.js'",
     "jest": "jest --coverage --verbose --color",
@@ -41,5 +44,5 @@
       "../../setupTests"
     ]
   },
-  "gitHead": "5d3cd6e88a5eae980267cc9cea231335ac7b0900"
+  "gitHead": "8941890fe1150bc4516d5d5e73333ad04a18aef9"
 }

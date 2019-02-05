@@ -3,7 +3,7 @@ import Label from '@lerna-test/label';
 
 const Input = ({
   className = '',
-  type,
+  type = 'text',
 }) => (
   <Fragment>
     <Label>My Input</Label>
