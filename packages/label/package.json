@@ -6,7 +6,6 @@
   "homepage": "https://github.com/Naimikan/lerna-test/tree/master/packages/label#readme",
   "license": "ISC",
   "main": "dist/index.js",
-  "module": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Naimikan/lerna-test.git"
